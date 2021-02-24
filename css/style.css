@@ -115,7 +115,7 @@ main{
   top: -72px;
   right: -108px;
   border-radius: 10px;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
