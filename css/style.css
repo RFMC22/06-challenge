@@ -1,0 +1,148 @@
+:root{
+  --veryblue: hsl(217, 19%, 35%);
+  --darkblue: hsl(214, 17%, 51%);
+  --grayishblue: hsl(212, 23%, 69%);
+  --lightblue: hsl(210, 46%, 95%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+}
+img{
+  display: block;
+}
+main{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightblue);
+}
+#container{
+  background-color: white;
+  width: 730px;
+  height: 280px;
+  border-radius: 10px;
+  display: flex;
+}
+#left{
+  width: 285px;
+  height: 100%;
+}
+#left img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+#right{
+  width: 445px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content{
+  width: 365px;
+  height: 210px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+#content h1{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--veryblue);
+}
+#content p{
+  color: var(--darkblue);
+}
+#info{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#info img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#info-img{
+  width: 170px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#info-left{
+  height: 100%;
+  width: 120px;
+}
+#info-left h2{
+  color: var(--veryblue);
+  font-weight: 700;
+}
+#share{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--lightblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+#share img{
+  width: 16px;
+  height: 14px;
+  border-radius: 0px;
+}
+
+/*js*/
+#share-list{
+  background-color: var(--veryblue);
+  width: 248px;
+  height: 55px;
+  position: absolute;
+  top: -72px;
+  right: -108px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+#img{
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+}
+#img img{
+  border-radius: 0px;
+  width: 20px;
+  height: 20px;
+}
+#share-list p{
+  color: var(--grayishblue);
+  letter-spacing: 4px;
+}
+#share-list::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 100%;
+  border-style: solid;
+  border-color: var(--veryblue) transparent transparent transparent;
+  border-width: 10px 10px 0px 10px;
+  
+}
